@@ -31,5 +31,5 @@ if (
   !(typeof define === "function" && define.amd) &&
   !(typeof module === "object" && module.exports)
 ) {
-  Chart.pluginService.register(plugin);
+  Chart.register(plugin);
 }

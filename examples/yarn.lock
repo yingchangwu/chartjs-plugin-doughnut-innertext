@@ -3135,10 +3135,10 @@ chart.js@^3.2.0:
   resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.2.0.tgz#3d0a4b62b6bee428f8547db6aa68c792b130c260"
   integrity sha512-Ml3R47TvOPW6gQ6T8mg/uPvyOASPpPVVF6xb7ZyHkek1c6kJIT5ScT559afXoDf6uwtpDR2BpCommkA5KT8ODg==
 
-chartjs-plugin-doughnut-innertext@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/chartjs-plugin-doughnut-innertext/-/chartjs-plugin-doughnut-innertext-2.4.0.tgz#38346bd1ee4de74f9966227d6ba94cac8b385347"
-  integrity sha512-rK/QcXroqhJtbcjc4c0odVpmJBsMMKLIv03ZyoRH5AZpx2uNChzGdbszYFmonHiNKroaChm7aLcoYTKYhKM3QQ==
+chartjs-plugin-doughnut-innertext@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/chartjs-plugin-doughnut-innertext/-/chartjs-plugin-doughnut-innertext-2.4.1.tgz#52711d3b14b7595c3746e922283b24b451a9c670"
+  integrity sha512-Kyk0/Nkax+c1kLFAi+29Gv33w+0tWSxCwKO18YUcn7TWmGa67jt0fs+VatImpEojj4C+rhJJSHGnJkSplkI+Gg==
   dependencies:
     chart.js "^3.2.0"
 
