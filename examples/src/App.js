@@ -1,6 +1,6 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import "./plugin";
+import {Chart} from 'chart.js'
 
 const Home = () =>{
   const data = [
@@ -53,6 +53,7 @@ const Home = () =>{
     },
     layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
   };
+  console.log(`chart name: ${Chart.name}`);
   return (
     <div style={{width: "500px", height: "300px"}}>
       <Doughnut type="doughnut"

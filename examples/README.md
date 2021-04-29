@@ -1,79 +1,70 @@
-# Chart JS Line Height Annotation Plugin
+# Getting Started with Create React App
 
-A small, lightweight and reliable ChartJS plugin for Line charts specifically. This plugin was made to be compatible with the `react-chartjs-2` library, but it is available as a commonjs and umd module, as well.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![alt-text](https://github.com/spkellydev/chartjs-plugin-lineheight-annotation/raw/master/examples/public/always-chartjs-lineheight-annotation-plugin.png "Chart JS Line Height Annotation Plugin")
+## Available Scripts
 
-The lines always go to the top of the data point, but you can choose if they're _always on_ **or** _when user hovers_. On hover: The line will draw to the tallest data point near the user's hover position.
+In the project directory, you can run:
 
-## Usage
+### `yarn start`
 
-```sh
-npm i chartjs-plugin-lineheight-annotation
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-For React components:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```js
-import React, { Component } from "react";
-import { Line } from "react-chartjs-2";
-import "chartjs-plugin-lineheight-annotation";
+### `yarn test`
 
-class App extends Component {
-  render() {
-    let data = api.get("line-data");
-    return (
-      <Line
-        options={{
-          // see all defaults / options below!
-          lineHeightAnnotation: {
-            color: "#000",
-            shadow: true
-          }
-        }}
-        data={data}
-      />
-    );
-  }
-}
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-and that's it!
+### `yarn build`
 
-### Options
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```js
-/// default values
-lineHeightAnnotation: {
-  // defaults to have line to the highest data point on every tick
-  always: true,
-  // optionally, only have line draw to the highest datapoint nearest the user's hover position
-  hover: false,
-  // colors of the line
-  color: '#000',
-  // name of yAxis
-  yAxis: 'y-axis-0',
-  // weight of the line
-  lineWeight: 1.5,
-   /// sets shadow for ALL lines on the canvas
-  shadow: {
-    // color of the shadow
-    color: 'rgba(0,0,0,0.35)',
-    // blur of the shadow
-    blur: 10,
-    /// shadow offset
-    offset: {
-      // x offset
-      x: 0,
-      // y offset
-      y: 3
-    }
-  },
-  // dash defaults at [10, 10]
-  noDash: true,
-}
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Always on:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![alt-text](https://github.com/spkellydev/chartjs-plugin-lineheight-annotation/raw/master/examples/public/always-chartjs-lineheight-annotation-plugin.png "Chart JS Line Height Annotation Plugin")
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# src/plugin
-/src/plugin.js
-
 # testing
 /coverage
 
