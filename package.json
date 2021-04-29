@@ -1,0 +1,56 @@
+{
+  "name": "chartjs-plugin-doughnut-innertext",
+  "version": "2.3.0",
+  "description": "A ChartJS doughnut plugin. It add inner text to the center of doughnut chart.",
+  "main": "src/plugin.js",
+  "repository": "yingchangwu/chartjs-plugin-doughnut-innertext",
+  "scripts": {
+    "clean": "rimraf build",
+    "watch": "rollup -c -w -i src/plugin.js",
+    "lint": "eslint src",
+    "build:dev": "rollup -c -i src/plugin.js",
+    "build:prod": "npm run build:dev && uglifyjs build/doughnutInnerTextPlugin.js -c -m -o build/doughnutInnerTextPlugin.min.js",
+    "prebuild": "npm run clean && npm run lint",
+    "build": "npm run build:prod",
+    "preversion": "npm run lint",
+    "prepare": "npm run build:dev",
+    "prepublishOnly": "npm run build:prod",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "release:pre": "npm version prerelease && npm publish --tag=next && git push --follow-tags"
+  },
+  "keywords": [
+    "chartjs",
+    "chartjs-plugin",
+    "doughnut chart inner text plugin",
+    "react-chartjs-2",
+    "react-chartjs"
+  ],
+  "files": [
+    "build",
+    "src/**/*.js"
+  ],
+  "author": {
+    "name": "Steven Wu",
+    "email": "wyc.steven@gmail.com",
+    "url": "http://fiveesoft.com/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "eslint": "^5.16.0",
+    "package-preamble": "^0.1.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "uglify-es": "^3.3.9"
+  }
+}
