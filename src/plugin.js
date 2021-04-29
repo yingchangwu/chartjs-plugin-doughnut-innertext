@@ -15,7 +15,7 @@ const plugin = {
     const centerText = chart.options.centerText;
     const ctx = chart.ctx;
 
-    const fontSize = (height / 114).toFixed(2);
+    let fontSize = (height / 114).toFixed(2);
     if (centerText.fontSizeAdjust) {
       fontSize = fontSize * (1 + centerText.fontSizeAdjust);
     }

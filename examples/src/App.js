@@ -34,7 +34,11 @@ const Home = () =>{
     ]
   };
   const options = {
-    centerText: 5000,	
+    centerText: {
+      value: 345,
+      color: '#FA8800',
+      fontSizeAdjust: -0.2
+    },	
     responsive: true,
     maintainAspectRatio: false, 
     plugins:{
