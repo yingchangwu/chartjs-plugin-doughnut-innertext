@@ -13,7 +13,7 @@ const Home = () =>{
     },
     {
       orderType: 'Dealers',
-      value: 4
+      value: 12
     }
   ]
   const dataLabels = data.map(({orderType})=>orderType);
@@ -23,13 +23,18 @@ const Home = () =>{
     datasets:[
       {
         label: '# of order types',
-        data: dataInput
+        data: dataInput,
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
+        ],
+        hoverOffset: 10
       }
     ]
   };
   const options = {
-    innerText: '50',
-    innerTextDesc: 'orders',	
+    centerText: 5000,	
     responsive: true,
     maintainAspectRatio: false, 
     plugins:{
@@ -37,10 +42,6 @@ const Home = () =>{
       filler:{
         propagate: false
       },
-      doughnutInnerText:{
-        innerText: '50'
-      },
-      innerText: '50',
       legend: {
         display: true,
         position: 'right'
@@ -50,7 +51,7 @@ const Home = () =>{
         text: "Sales By Source"
       }
     },
-    layout: { padding: { left: 0, right: 0, top: 0, bottom: 0 } },
+    layout: { padding: { left: 50, right: 40, top: 50, bottom: 50 } },
   };
   return (
     <div style={{width: "500px", height: "300px"}}>
