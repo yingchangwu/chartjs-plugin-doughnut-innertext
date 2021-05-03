@@ -1,4 +1,3 @@
-import {Chart} from "chart.js";
 
 const plugin = {
   id: "doughnutInnerText",
@@ -33,9 +32,9 @@ const plugin = {
 
 // if the environment is neither amd nor commonjs, register the plugin globally for the samples and tests
 export default plugin;
-if (
-  !(typeof define === "function" && define.amd) &&
-  !(typeof module === "object" && module.exports)
-) {
-  Chart.register(plugin);
-}
+// if (
+//   !(typeof define === "function" && define.amd) &&
+//   !(typeof module === "object" && module.exports)
+// ) {
+//   Chart.register(plugin);
+// }
